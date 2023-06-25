@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import React, { useState, useEffect } from "react";
+import { BsStopWatch } from "react-icons/bs";
 function App() {
+  const [stopwatchData, setStopwatchData] = useState([
+    { id: 0, name: "Timer 1", time: 0,
+  isRunning: false, lap: [], time_started: 0,
+pause: [] },
+  ])
+  const [selectedRow, setSelectedRow] = useState(0)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="left">
+
+        </div>
+        <div className="right">
+
+        </div>
+      </div>
     </div>
   );
 }
