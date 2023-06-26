@@ -41,3 +41,65 @@
   padding: 10px;
   overflow-y: scroll;
 }
+
+.stopwatchContainer {
+  padding: 10px;
+  background-color: gray;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.control-buttons {
+  padding: 10px;
+  background-color: gray;
+  border: none;
+}
+
+.main-button-controls {
+  display:  flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.name-label {
+  padding: 10px;
+  background-color: gray;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: white;
+}
+
+.main-time-label {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.lap-label {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 500px;
+  margin-top: 20px;
+}
+
+.lap-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-label {
+  font-size: 25px;
+  font-weight: bold;
+}
