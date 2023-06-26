@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import { BsStopWatch } from "react-icons/bs";
+import { BsStopwatch } from 'react-icons/bs';
 function App() {
   const [stopwatchData, setStopwatchData] = useState([
     { id: 0, name: "Timer 1", time: 0,
@@ -80,7 +80,7 @@ pause: [] },
             <div style={{ cursor: "pointer", alignItems: "center", display: "flex", flexDirection: "row",
             gap: 10 }} onClick={() => setStopwatchData([...stopwatchData, { id: stopwatchData.length, name: `Timer ${stopwatchData.length + 1}`, time: 0,
               isRunning: false, lap: [], pause: [] }])}>
-              <BsStopWatch size={20} color={"white"} />
+                <BsStopwatch size={20} color={"white"} />
               <p>Add Stopwatch</p>
             </div>
           </div>
